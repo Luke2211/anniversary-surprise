@@ -7,8 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
+            background-color: #800080; /* Púrpura */
+            color: #fff;
             text-align: center;
             padding: 20px;
         }
@@ -19,6 +19,7 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #800080; /* Texto púrpura */
         }
         .hidden {
             display: none;
@@ -34,24 +35,32 @@
             margin: 10px;
             border: none;
             border-radius: 5px;
-            background-color: #007BFF;
+            background-color: #800080;
             color: #fff;
             cursor: pointer;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color: #5a005a;
+        }
+        .header-text {
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+        .heart {
+            color: #800080; /* Corazón púrpura */
+            font-size: 1.5em;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Happy Anniversary!</h1>
-        <p>Click the button below to reveal a surprise.</p>
-        <button onclick="showSurprise()">Show Surprise</button>
+        <h1 class="header-text">FELIZ ANIVERSARIO MI AMOR <span class="heart">❤️</span></h1>
+        <p>Haz clic en el botón de abajo para revelar una sorpresa.</p>
+        <button onclick="showSurprise()">Mostrar Sorpresa</button>
         <div id="surprise" class="hidden">
-            <h2>I Love You!</h2>
-            <img src="your-image-url.jpg" alt="Special Moment">
-            <p>This is one of my favorite moments with you. Thank you for being amazing!</p>
+            <h2>¡Te Amo!</h2>
+            <img src="your-image-url.jpg" alt="Momento Especial">
+            <p>Este es uno de mis momentos favoritos contigo. ¡Gracias por ser tan increíble!</p>
         </div>
     </div>
     <script>
